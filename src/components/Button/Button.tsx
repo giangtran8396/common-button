@@ -1,5 +1,9 @@
-import React from "react";
+import React, { ComponentProps } from "react";
+import classes from './Button.module.css';
 
-export function Button() {
-  return <button>GiangTLQ</button>;
+interface ButtonProps extends ComponentProps<'button'> {
+  children: React.ReactNode
+}
+export function Button({children, ...rest}:ButtonProps) {
+  return <button className={classes['button']} {...rest}>{children}</button>;
 }
