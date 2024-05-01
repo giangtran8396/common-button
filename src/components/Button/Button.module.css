@@ -1,12 +1,11 @@
 .button {
-    padding: .5rem 1rem;
+    @apply flex py-2 px-4;
     background-color: #bd0f72;
     color: #ffffff;
     font-size: .875rem;
     line-height: 1.25rem;
     min-width: 80px;
     border-radius: 5px;
-    display: flex;
     align-items: center;
     cursor: pointer;
 }
