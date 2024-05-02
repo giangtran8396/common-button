@@ -7,10 +7,15 @@ import classnames from 'classnames';
 interface Props {
     children?: React.ReactNode;
     checked?: boolean;
+
+    onClick?: () => void;
 }
-export function CheckBox({children, checked}: Props) {
+export function CheckBox({children, checked, onClick}: Props) {
+    function hanldeOnClick() {
+        onClick?.();
+    }
     return (
-        <div className={classes['root']}>
+        <div className={classes['root']} onClick={hanldeOnClick}>
             <div className={classes['wrap']}>
                 <input id="default-checkbox" type="checkbox" value="" className={classnames(classes['input'], checked && classes['input-checked'])} />
                 {checked && <CheckBoxIcon />}

@@ -3,7 +3,11 @@
 }
 
 .wrap {
-    @apply rounded w-4 h-4 relative flex-shrink-0;
+    @apply rounded w-4 h-4 relative flex-shrink-0 cursor-pointer;
+
+    & svg {
+        @apply absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none;
+    }
 }
 
 .input {
@@ -15,5 +19,5 @@
 }
 
 .label {
-    @apply text-sm font-medium text-gray-900 dark:text-gray-300;
+    @apply text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer;
 }

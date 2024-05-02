@@ -1,6 +1,6 @@
 {
   "name": "@giangtran8396/shared-component",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "description": "",
   "scripts": {
     "build": "rollup -c rollup.config.js"
