@@ -1,6 +1,6 @@
 {
   "name": "@giangtran8396/shared-component",
-  "version": "0.0.9",
+  "version": "0.1.4",
   "description": "",
   "scripts": {
     "build": "rollup -c rollup.config.js"
@@ -13,6 +13,7 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.3.1",
     "autoprefixer": "^10.4.19",
+    "classnames": "^2.5.1",
     "react": "^18.3.1",
     "rollup": "^4.17.2",
     "rollup-plugin-dts": "^6.1.0",
