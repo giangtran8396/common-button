@@ -1,11 +1,13 @@
 {
   "name": "@giangtran8396/shared-component",
-  "version": "0.1.9",
+  "version": "0.2.8",
   "description": "",
   "scripts": {
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js && npm run copy",
+    "copy": "@powershell copy .npmrc shared-component/",
+    "publish": "cd shared-component && npm publish"
   },
-  "author": "",
+  "author": "giangtlq",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -17,17 +19,18 @@
     "react": "^18.3.1",
     "rollup": "^4.17.2",
     "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "tailwindcss": "^3.4.3",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
   },
   "type": "module",
-  "module": "dist/index.js",
+  "module": "shared-component/dist/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
+  "types": "shared-component/dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/giangtran8396"
   }
